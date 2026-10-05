@@ -32,6 +32,37 @@ export type ActionResult = {
   message: string
 }
 
+export type Operator = {
+  name: string
+  unit: string
+}
+
+export type ActionContext = {
+  operator: Operator
+}
+
+export type LabResultForm = {
+  conclusion: string
+  period: string
+}
+
+// 跨业务面的待办事项：浮选样本退回后，在浮选采样与测年送检两个业务面都要能看到。
+export type TodoItem = {
+  id: number
+  kind: 'flotation-resample'
+  title: string
+  module: string
+  refId: number
+  refCode: string
+  samplingUnit: string
+  reason: string
+  round: number
+  status: 'open' | 'done'
+  createdAt: string
+  doneAt?: string
+  newDatingId?: number
+}
+
 export type OverviewResult = {
   cards: { label: string; value: number }[]
   modules: { name: string; created: number; pending: number; abnormal: number }[]

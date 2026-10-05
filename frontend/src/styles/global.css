@@ -35,3 +35,12 @@ body { margin: 0; background: #f6f8fb; color: #1f2937; }
 .error-text { color: #b42318; }
 .status-legend { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 10px; font-size: 12px; color: var(--muted); }
 .legend-item { background: #eef2f7; border-radius: 999px; padding: 2px 10px; }
+.unit-switch { display: inline-flex; align-items: center; gap: 4px; }
+.unit-switch select { padding: 2px 4px; border-radius: 4px; border: 1px solid var(--border); }
+.todo-panel { background: #fff8e6; border: 1px solid #f0d98c; border-radius: 8px; padding: 10px 12px; margin-bottom: 12px; }
+.todo-panel h3 { margin: 0 0 6px; font-size: 13px; }
+.todo-panel ul { margin: 0; padding-left: 18px; font-size: 13px; }
+.todo-panel li { margin: 2px 0; }
+.todo-empty { margin: 0; font-size: 12px; color: var(--muted); }
+.inline-form { display: flex; gap: 6px; align-items: center; flex-wrap: wrap; margin-top: 6px; }
+.inline-form input { padding: 4px 6px; border: 1px solid var(--border); border-radius: 4px; }
